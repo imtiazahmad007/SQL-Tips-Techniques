@@ -1,10 +1,9 @@
+-- Below is an example of inserting data idempotently. 
+-- In otherwords, it will not insert data if a record already exists for the particular date.
+-- This sort of a script can be run once a day or several times a day only inserting data for new dates.
 
-# Below is an example of inserting data idempotently. 
-# In otherwords, it will not insert data if a record already exists for the particular date.
-# This sort of a script can be run once a day or several times a day only inserting data for new dates.
-
-# NOTE: There is some extra complexity applied in the nested 
-      # query for only inserting those users subscribed to mailings. 
+-- NOTE: There is some extra complexity applied in the nested 
+      -- query for only inserting those users subscribed to mailings. 
 
 
 -- The example I am using below is for a  hypothtical users_articles table
