@@ -9,7 +9,7 @@
 -- The example I am using below is for a  hypothtical users_articles table
 
 INSERT INTO users_articles (date, user_id, hit_count)
-SELECT a.date, a.user_id, sum(a.article_id as hits)  
+SELECT a.date, a.user_id, sum(a.article_id) as hits
 from (
 select t.* from users_article_details AS t
 WHERE NOT EXISTS (
